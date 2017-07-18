@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+#Apps {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  color: white;
+  width: 41%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+
+  z-index: 10;
+  background: rgba(6, 6, 6, 0.78);
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#countdown {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 3%;
+  margin-top: 10%;
+
+  z-index: 10;
+  background: rgba(45, 38, 38, 0.78);
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
