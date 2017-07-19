@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("../images/image-bg.jpg");
+  background-image: url("../images/image-bgr.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -12,10 +12,10 @@ body {
   position: absolute;
   border-radius: 25px;
   font-family: 'Raleway', sans-serif;
-  font-size: 57px;
+  font-size: 55px;
   text-align: center;
   color:white;
   padding: 20px;
-  background-color: blue;
+  margin-top:10%;
   background: rgba(33, 30, 30, 0.73);
 }
