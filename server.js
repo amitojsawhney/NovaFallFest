@@ -31,12 +31,68 @@ app.get("/donate", function(req, res) {
   res.sendFile(__dirname + "/app/html/donate.html");
 });
 
-app.post("/charge", function(req, res) {
+app.post("/charge10", function(req, res) {
   var token = req.body.stripeToken;
   console.log(token)
   stripe.charges.create({
 
-    amount: 100,
+    amount: 1000,
+    currency: "usd",
+    source: token
+
+  }, function(err, charge) {
+    // asynchronously called
+  });
+});
+
+app.post("/charge20", function(req, res) {
+  var token = req.body.stripeToken;
+  console.log(token)
+  stripe.charges.create({
+
+    amount: 2000,
+    currency: "usd",
+    source: token
+
+  }, function(err, charge) {
+    // asynchronously called
+  });
+});
+
+app.post("/charge25", function(req, res) {
+  var token = req.body.stripeToken;
+  console.log(token)
+  stripe.charges.create({
+
+    amount: 2500,
+    currency: "usd",
+    source: token
+
+  }, function(err, charge) {
+    // asynchronously called
+  });
+});
+
+app.post("/charge50", function(req, res) {
+  var token = req.body.stripeToken;
+  console.log(token)
+  stripe.charges.create({
+
+    amount: 5000,
+    currency: "usd",
+    source: token
+
+  }, function(err, charge) {
+    // asynchronously called
+  });
+});
+
+app.post("/charge100", function(req, res) {
+  var token = req.body.stripeToken;
+  console.log(token)
+  stripe.charges.create({
+
+    amount: 10000,
     currency: "usd",
     source: token
 
