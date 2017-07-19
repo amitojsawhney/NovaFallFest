@@ -5,7 +5,6 @@ var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
 var app = express();
-var amount = Number;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/app"));
 
@@ -35,17 +34,11 @@ app.get("/charge", function(req, res) {
   res.sendFile(__dirname + "/app/html/charge.html");
 });
 
-app.post("/", function(req, res) {
-  amount = req.body.donationAmount;
-  console.log(amount);
-  res.redirect(307, "http://localhost:8080/");
-});
-
 app.post("/charge", function(req, res) {
+  console.log("charge");
   var token = req.body.stripeToken;
-  res.json("charge");
+  var amount = req.body.donationAmount;
   console.log(amount);
-  console.log(token);
   stripe.charges.create(
     {
       amount: amount,
