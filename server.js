@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var config = require('./config')
+var config = require('./.env')
 var stripe = require("stripe")(config.stripeKey);
 var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
@@ -39,8 +39,8 @@ app.post("/charge", function(req, res) {
 
     amount: 100,
     currency: "usd",
-    source: token, // obtained with Stripe.js
-    description: "Charge for william.williams@example.com"
+    source: token
+
   }, function(err, charge) {
     // asynchronously called
   });
