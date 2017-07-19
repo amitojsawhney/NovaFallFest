@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var config = require('./.env')
-var stripe = require("stripe")(config.stripeKey);
+var stripe = require("stripe")(process.env.stripeKey);
 var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
