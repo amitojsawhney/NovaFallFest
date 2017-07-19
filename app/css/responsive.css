@@ -7,7 +7,7 @@ body {
 }
 
 #overlay {
-  width: 40%;
+  width: auto;
   height: auto;
   position: absolute;
   border-radius: 25px;
@@ -17,7 +17,5 @@ body {
   color:white;
   padding: 20px;
   background-color: blue;
-  margin-left: 30%;
-  margin-top: 10%;
   background: rgba(33, 30, 30, 0.73);
 }
