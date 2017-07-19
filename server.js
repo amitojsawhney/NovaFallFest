@@ -1,12 +1,13 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var stripe = require("stripe")("sk_test_YOBQn1xtebvhzKhnJycXgHED");
+var stripe = require("stripe")("sk_live_NAGrsBharuiYzNRHzUhxvmx9");
 var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
 var app = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/app"));
+app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -30,26 +31,18 @@ app.get("/donate", function(req, res) {
   res.sendFile(__dirname + "/app/html/donate.html");
 });
 
-app.get("/charge", function(req, res) {
-  res.sendFile(__dirname + "/app/html/charge.html");
-});
-
 app.post("/charge", function(req, res) {
-  console.log("charge");
   var token = req.body.stripeToken;
-  var amount = req.body.donationAmount;
-  console.log(amount);
-  stripe.charges.create(
-    {
-      amount: amount,
-      currency: "usd",
-      source: token, // obtained with Stripe.js
-      description: "Charge for ava.robinson@example.com"
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
+  console.log(token)
+  stripe.charges.create({
+
+    amount: 100,
+    currency: "usd",
+    source: token, // obtained with Stripe.js
+    description: "Charge for william.williams@example.com"
+  }, function(err, charge) {
+    // asynchronously called
+  });
 });
 
 var apiRouter = express.Router();
