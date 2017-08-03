@@ -7,7 +7,7 @@ var mongoose = require("mongoose");
 var app = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/app"));
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -31,74 +31,83 @@ app.get("/donate", function(req, res) {
   res.sendFile(__dirname + "/app/html/donate.html");
 });
 
+app.post('/donate', function(req, res) {
+  console.log("test");
+});
+
 app.post("/charge10", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token)
-  stripe.charges.create({
-
-    amount: 1000,
-    currency: "usd",
-    source: token
-
-  }, function(err, charge) {
-    // asynchronously called
-  });
+  console.log(token);
+  stripe.charges.create(
+    {
+      amount: 1000,
+      currency: "usd",
+      source: token
+    },
+    function(err, charge) {
+      // asynchronously called
+    }
+  );
 });
 
 app.post("/charge20", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token)
-  stripe.charges.create({
-
-    amount: 2000,
-    currency: "usd",
-    source: token
-
-  }, function(err, charge) {
-    // asynchronously called
-  });
+  console.log(token);
+  stripe.charges.create(
+    {
+      amount: 2000,
+      currency: "usd",
+      source: token
+    },
+    function(err, charge) {
+      // asynchronously called
+    }
+  );
 });
 
 app.post("/charge25", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token)
-  stripe.charges.create({
-
-    amount: 2500,
-    currency: "usd",
-    source: token
-
-  }, function(err, charge) {
-    // asynchronously called
-  });
+  console.log(token);
+  stripe.charges.create(
+    {
+      amount: 2500,
+      currency: "usd",
+      source: token
+    },
+    function(err, charge) {
+      // asynchronously called
+    }
+  );
 });
 
 app.post("/charge50", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token)
-  stripe.charges.create({
-
-    amount: 5000,
-    currency: "usd",
-    source: token
-
-  }, function(err, charge) {
-    // asynchronously called
-  });
+  console.log(token);
+  stripe.charges.create(
+    {
+      amount: 5000,
+      currency: "usd",
+      source: token
+    },
+    function(err, charge) {
+      // asynchronously called
+    }
+  );
 });
 
 app.post("/charge100", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token)
-  stripe.charges.create({
-
-    amount: 10000,
-    currency: "usd",
-    source: token
-
-  }, function(err, charge) {
-    // asynchronously called
-  });
+  console.log(token);
+  stripe.charges.create(
+    {
+      amount: 10000,
+      currency: "usd",
+      source: token
+    },
+    function(err, charge) {
+      // asynchronously called
+    }
+  );
 });
 
 var apiRouter = express.Router();

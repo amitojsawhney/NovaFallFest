@@ -8,7 +8,8 @@ angular
     vm.libData = {};
 
     vm.addAmount = function() {
-      $http.post("http://localhost:8080/charge", {
+      console.log("in add amount");
+      $http.post("http://localhost:8080/donate", {
         donationAmount: vm.libData.amount
       });
 

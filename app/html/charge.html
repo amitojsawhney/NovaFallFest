@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <!-- HTML Scaling -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
 
-    <!-- CSS Global Compulsory -->
+  <!-- HTML Scaling -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <!-- CSS Global Compulsory -->
 
 
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
 
 
-    <!--Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-    <script type="text/javascript" src="../angular/core.js"></script>
+  <!--Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+  <script type="text/javascript" src="../angular/core.js"></script>
 
-    <title> Nova Fall Fest Donate</title>
-
-
-  </head>
-  <body >
-    <form action="/charge" method="post">
+  <title> Nova Fall Fest Donate</title>
 
 
-      <script
-         src = "https://checkout.stripe.com/checkout.js"
-         >
-       </script>
+</head>
 
-      </form>
+<body ng-app="donationCustom" ng-controller ="mainController as main">
+  <form ng-submit = "main.addAmount()">
+    <div class = "mat-in">
+      <input type = "text" name="amount" value "" required ng-model = "main.libData.donationAmount" />
     </div>
-    <div id="error" class="hidden"></div>
-    <div id="success" class="hidden">Thanks for donate to Villanova Fall Festival</div>
-  </body>
+  </form>
+<!--  <form action="/charge" method="post">
+
+
+    <script src="https://checkout.stripe.com/checkout.js">
+    </script>
+
+  </form>
+-->
+  <div id="error" class="hidden"></div>
+  <div id="success" class="hidden">Thanks for donate to Villanova Fall Festival</div>
+</body>
+
 </html>
