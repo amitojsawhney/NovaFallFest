@@ -32,6 +32,10 @@ app.get("/donate", function(req, res) {
 });
 
 app.get("/vc", function(req, res) {
+  res.sendFile(__dirname + "/app/html/vc.html");
+});
+
+app.get("/vcSubmit", function(req, res) {
   res.sendFile(
     __dirname +
       "/app/vc/Villanova_Special_Olympics_Volunteer_Coordinator_Application.html"
