@@ -6320,7 +6320,8 @@ var JotForm = {
             }
 
             if (pair.value.quantityField && !(parseInt($(pair.value.quantityField).getValue()) > 0)) {
-                return;
+                // skip calculation if quantity is zero and is not a subproduct
+                if (!$(pair.value.quantityField).hasClassName('form-subproduct-quantity')) { return; }
             }
             var isSetupFee = pair.value.recurring ? true : false; // is there a setup fee for this subscription?
             var isStripe = typeof Stripe === "function";    // is this a stripe payment field
