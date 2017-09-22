@@ -13,19 +13,35 @@
 
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 750px)" href="../css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 750px)" href="../css/donate.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="../css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+  <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
+  <link rel="stylesheet" type="text/css" href="../css/owl.theme.css" />
+  <link rel="stylesheet" type="text/css" href="../css/vegas.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
 
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 
   <!--Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
   <script type="text/javascript" src="../angular/core.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="../javascript/modernizr.js"></script>
+  <script type="text/javascript" src="../javascript/snap.svg-min.js"></script>
+
 
   <title> Nova Fall Fest Donate</title>
 
@@ -33,26 +49,85 @@
 </head>
 
 <body ng-app="donationCustom" ng-controller="mainController as main">
+    <div id="overlay">
 
-  <div id="overlay">
-    <div> Select amount to donate! </div>
-    <form ng-submit="main.addAmount()">
-      <input type="text" value " " placeholder="Amount" ng-model="main.libData.amount" autofocus>
-      <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
-    data-locale="auto"
-    data-label = "Donate"
-    data-currency="usd">
-  </script>
-    </form>
+    <div id = "letter">
+      <h2>
+      Thank you for supporting Special Olympics!
+    </h2>
+    <br>
 
+      Hello family and friends! For those of you who don’t know one of us (or either of us), our names are Joe Ziebell and Hannah Durnin, and we are running the Philadelphia Marathon this November to fundraise for Villanova Special Olympics.
+      <br>
+      <br>
+      As some of you may know, we have spent much of our our time at Villanova working and volunteering with the university’s Special Olympics committee. Our friendship has only been strengthened over the years (whether Hannah likes it or not) and we are excited (or not) to take on this next challenge together.
+      <br>
+      <br>
+      Each year, Villanova hosts Fall Festival--the largest student run Special Olympics event in the world.
+      However, Fall Festival is just one Special Olympics event. There are 4.9 million athletes with intellectual disabilities involved in Special Olympics programs around the world. The organization has a presence in 172 countries, clearly making it a worldwide mission. So, whether you’re a Villanovan, a friend, a family member, a classmate, a former professor, or an avid fan in some other capacity, help support the mission of  Special Olympics and share it with  as many people as you can!
+      <br>
+      <br>
+      Please help us reach our goal of raising $20,000 for Villanova Special Olympics by making a donation today. The process is fast, easy, and secure. We are extremely grateful and appreciative for any support you can provide. It will benefit a great cause!
+      <br>
+      <br>
+      If you can't make a donation at this point, help us reach our goal by sharing this page on Facebook, Twitter, Instagram, anything. Or, even better, send an email to friends and family that you think would be interested in contributing. Don’t forget to include a link to our page!
+      <br>
+      <br>
+      Should you wish to make a donation via check, those contributions can be sent to:
 
-</form>
-    <div id="error" class="hidden"></div>
+      <br>
+      <br>
+      Hannah Durnin, Villanova Special Olympics
+      <br>
+
+      Dougherty Hall, Room 214
+      <br>
+
+      800 E. Lancaster Ave.
+      <br>
+
+      Villanova, PA 19085
+</div>
 
   </div>
 
+  <div class="thermometer-widget" data-code-target="html_code_example">
+
+    <div class="title">GiveCamp UK</div>
+    <div class="cause">Buy Paul & Rachel beer!</div>
+
+    <div class="figures">
+      <div class="goal">
+        <span class="label">Our Goal</span>
+        <span class="value">£5,000</span>
+      </div>
+      <div class="current_total">
+        <span class="label">Raised so far</span>
+        <span class="value">£3,000</span>
+      </div>
+    </div>
+
+  </div>
+  <br />
 </body>
+<!-- JS -->
+<script type="text/javascript" src="../javascript/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="../javascript/retina.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.parallaxify.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.particleground.min.js"></script>
+<script type="text/javascript" src="../javascript/vegas.min.js"></script>
+<script type="text/javascript" src="../javascript/trianglify.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="../javascript/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../javascript/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.appear.js"></script>
+<script type="text/javascript" src="../javascript/classie.js"></script>
+<script type="text/javascript" src="../javascript/sidebar.js"></script>
+<script type="text/javascript" src="../javascript/main.js"></script>
+
 
 </html>

@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var stripe = require("stripe")(process.env.stripeKey);
-//var stripe = require('stripe')('sk_test_YOBQn1xtebvhzKhnJycXgHED')
+//var stripe = require("stripe")(process.env.stripeKey);
+var stripe = require('stripe')('sk_test_YOBQn1xtebvhzKhnJycXgHED')
 var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
@@ -46,6 +46,11 @@ app.get("/vcSubmit", function(req, res) {
 app.get('/marathon', function(req,res){
   res.sendFile(__dirname + '/app/marathon/index.html')
 })
+app.get('/julia', function(req,res){
+  res.sendFile(__dirname + '/app/html/julia.html')
+})
+
+
 
 
 app.post("/charge", function(req, res) {
