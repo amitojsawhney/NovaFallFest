@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var stripe = require("stripe")(process.env.stripeKey);
+//var stripe = require('stripe')('sk_test_YOBQn1xtebvhzKhnJycXgHED')
 var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
@@ -42,72 +43,18 @@ app.get("/vcSubmit", function(req, res) {
   );
 });
 
-app.post("/charge10", function(req, res) {
-  var token = req.body.stripeToken;
-  console.log(token);
-  stripe.charges.create(
-    {
-      amount: 1000,
-      currency: "usd",
-      source: token
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
-});
+app.get('/marathon', function(req,res){
+  res.sendFile(__dirname + '/app/marathon/index.html')
+})
 
-app.post("/charge20", function(req, res) {
-  var token = req.body.stripeToken;
-  console.log(token);
-  stripe.charges.create(
-    {
-      amount: 2000,
-      currency: "usd",
-      source: token
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
-});
 
-app.post("/charge25", function(req, res) {
+app.post("/charge", function(req, res) {
   var token = req.body.stripeToken;
-  console.log(token);
+  var donationAmount = req.param('donationAmount')
+  console.log(donationAmount);
   stripe.charges.create(
     {
-      amount: 2500,
-      currency: "usd",
-      source: token
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
-});
-
-app.post("/charge50", function(req, res) {
-  var token = req.body.stripeToken;
-  console.log(token);
-  stripe.charges.create(
-    {
-      amount: 5000,
-      currency: "usd",
-      source: token
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
-});
-
-app.post("/charge100", function(req, res) {
-  var token = req.body.stripeToken;
-  console.log(token);
-  stripe.charges.create(
-    {
-      amount: 10000,
+      amount: donationAmount,
       currency: "usd",
       source: token
     },

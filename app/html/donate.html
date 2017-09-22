@@ -36,57 +36,18 @@
 
   <div id="overlay">
     <div> Select amount to donate! </div>
-  <!--   <form ng-submit="main.addAmount()">
+    <form ng-submit="main.addAmount()">
       <input type="text" value " " placeholder="Amount" ng-model="main.libData.amount" autofocus>
-    </form> -->
-    <form action="/charge10" method="POST">
-  <script
+      <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
     data-locale="auto"
-    data-label = "Donate $10"
+    data-label = "Donate"
     data-currency="usd">
   </script>
-</form>
+    </form>
 
-<form action="/charge20" method="POST">
-<script
-src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
-data-locale="auto"
-data-label = "Donate $20"
-data-currency="usd">
-</script>
-</form>
 
-<form action="/charge25" method="POST">
-<script
-src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
-data-locale="auto"
-data-label = "Donate $25"
-data-currency="usd">
-</script>
-</form>
-
-<form action="/charge50" method="POST">
-<script
-src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
-data-locale="auto"
-data-label = "Donate $50"
-data-currency="usd">
-</script>
-</form>
-
-<form action="/charge100" method="POST">
-<script
-src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-data-key="pk_live_QbYP2nvsSClWeKOr543sGUeb"
-data-locale="auto"
-data-label = "Donate $100"
-data-currency="usd">
-</script>
 </form>
     <div id="error" class="hidden"></div>
 
