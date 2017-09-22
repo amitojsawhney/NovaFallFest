@@ -46,7 +46,7 @@ app.get("/vcSubmit", function(req, res) {
 app.get('/marathon', function(req,res){
   res.sendFile(__dirname + '/app/marathon/index.html')
 })
-app.get('/julia', function(req,res){
+app.get('/caesar', function(req,res){
   res.sendFile(__dirname + '/app/html/julia.html')
 })
 

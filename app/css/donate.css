@@ -2,7 +2,7 @@ body {
   background-image: url("../images/colored.jpg");
   height: 100%;
   width: 100%;
-  background-size:100%;
+  background-size:cover;
 }
 
 #overlay {
