@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 750px)" href="../css/donate.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="../css/responsive.css">
   <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
@@ -25,6 +26,17 @@
   <link rel="stylesheet" type="text/css" href="../css/menu.css" />
   <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+        <!--copy this code into your header-->
+  <link href="../css/goal-thermometer.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+      var currentAmount = 2000;
+  </script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="../javascript/goal-thermometer.js"></script>
+
 
 
 
@@ -40,7 +52,10 @@
   <script type="text/javascript" src="../angular/core.js"></script>
   <!-- JS -->
   <script type="text/javascript" src="../javascript/modernizr.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../javascript/materialize.min.js"></script>
   <script type="text/javascript" src="../javascript/snap.svg-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 
   <title> Nova Fall Fest Donate</title>
@@ -52,7 +67,7 @@
     <div id="overlay">
 
     <div id = "letter">
-      <h2>
+      <h2 style="color:#90b2d8; text-align:center">
       Thank you for supporting Special Olympics!
     </h2>
     <br>
@@ -87,27 +102,26 @@
       <br>
 
       Villanova, PA 19085
+    </div>
+  </div>
+  <div id = "therm-overlay">
+    <p><a href="javascript:void( window.open( 'https://form.jotform.us/72641570759161', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">   Donate! </a></p>
 </div>
 
-  </div>
-
-  <div class="thermometer-widget" data-code-target="html_code_example">
-
-    <div class="title">GiveCamp UK</div>
-    <div class="cause">Buy Paul & Rachel beer!</div>
-
-    <div class="figures">
-      <div class="goal">
-        <span class="label">Our Goal</span>
-        <span class="value">£5,000</span>
-      </div>
-      <div class="current_total">
-        <span class="label">Raised so far</span>
-        <span class="value">£3,000</span>
-      </div>
-    </div>
+  <div id = "donate">
 
   </div>
+
+  <div id = "countdown"><h3 style="color:green;"> 29th Fall Festival Countdown! </h3>
+  <div id="clock-countdown" class="animated bounceInDown" data-animation-delay="700"></div>
+
+ </div>
+
+
+
+
+  </div>
+</div>
   <br />
 </body>
 <!-- JS -->

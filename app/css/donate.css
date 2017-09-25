@@ -1,14 +1,15 @@
 body {
-  background-image: url("../images/colored.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:cover;
+
+  background-image: url(../images/colored.jpg);
+  background-size:cover;;
+  background-repeat: no-repeat;
+
 }
 
 #overlay {
-  width: 35%;
-  height: auto;
-  position: absolute;
+  width: 30%;
+  height: auto
+  position:absolute;
   border-radius: 25px;
   font-family: 'Slabo 27px', serif;
   font-size: 57px;
@@ -18,26 +19,28 @@ body {
   background: rgba(34, 30, 30, 0.73);
   margin-left:1%;
   margin-top:2%;
+  float:left;
+  z-index: 1;
 }
 
-#overlayVC {
-  width: 40%;
-  height: auto;
-  position: absolute;
+#therm-overlay {
+  width: 30%;
+  height: 40%;
   border-radius: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Slabo 27px', serif;
+  font-size: 57px;
   text-align: center;
   color: white;
   padding: 20px;
-  background-color: blue;
-  margin-left: 30%;
-  margin-top: 10%;
-  background: rgba(33, 30, 30, 0.73);
+  background: rgba(34, 30, 30, 0.73);
+  margin-left:3%;
+  margin-top:2%;
+  float:left;
+  z-index: 1;
 }
 
+
 #letter{
-
-
   font-family: 'Slabo 27px', serif;
   text-align: left;
   color: white;
@@ -46,80 +49,25 @@ body {
 }
 
 #countdown{
-  height:25%;
-  width:100%;
-  background: rgba(33, 30, 30, 0.73);
-}
-
-h2{
+  width: 30%;
+  height: 20%;
+  border-radius: 25px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 30px;
   text-align: center;
-}
+  color: white;
+  padding: 20px;
+  background: rgba(34, 30, 30, 0.73);
+  margin-top:2%;
+  margin-left:3%;
+  float:left;
+  z-index: 1;
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  color: white;
 
-@import "compass/css3";
+h2,h3{
+  text-align: center;
+  color: c9e0f0;
 
-body {
-  font-family: Helvetica;
-}
-
-.donation-meter {
-  margin-left: 45%;
-  width: 100px;
-  .glass {
-    background: #e5e5e5;
-    border-radius: 100px 100px 0 0;
-    display: block;
-    height: 300px;
-    margin: 0 35px 10px;
-    padding: 5px;
-    position: relative;
-    width: 20px;
-  }
-  .amount {
-    background: #f34e54;
-    border-radius: 100px;
-    display: block;
-    width: 20px;
-    position: absolute;
-     bottom: 5px;
-  }
-  strong { display: block; text-align: center; }
-  .goal {
-    font-size: 30px;
-  }
-  .total {
-    font-size: 16px;
-    position: absolute;
-    right: 35px;
-  }
-}
-
-.bulb {
-  background: #e5e5e5;
-  border-radius: 100px;
-  display: block;
-  height: 50px;
-  margin: 0 35px 10px;
-  padding: 5px;
-  position: relative;
-    top: -20px;
-    right: 15px;
-  width: 50px;
-  .red-circle {
-    background: #f34e54;
-    border-radius: 100px;
-    display: block;
-    height: 50px;
-    width: 50px;
-  }
-  .filler {
-    background: #f34e54;
-    border-radius: 100px 100px 0 0;
-    display: block;
-    height: 30px;
-    width: 20px;
-    position: relative;
-      top: -65px;
-      right: -15px;
-    z-index: 30;
-  }
 }
