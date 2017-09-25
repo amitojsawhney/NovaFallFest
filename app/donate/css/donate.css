@@ -1,12 +1,8 @@
-html, body {margin: 0; height: 100%; overflow: hidden;
-  background-image: url(../images/colored.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
 
 #overlay {
-  width: 35%;
+  width: 30%;
+  height:auto;
+  position:absolute;
   border-radius: 25px;
   font-family: 'Slabo 27px', serif;
   font-size: 57px;

@@ -29,7 +29,7 @@ app.get("/countdown", function(req, res) {
 });
 
 app.get("/donate", function(req, res) {
-  res.sendFile(__dirname + "/app/html/donate.html");
+  res.sendFile(__dirname + "/app/donate/index.html");
 });
 
 app.get("/vc", function(req, res) {
