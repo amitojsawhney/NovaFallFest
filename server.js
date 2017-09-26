@@ -50,22 +50,6 @@ app.get('/caesar', function(req,res){
 
 
 
-app.post("/charge", function(req, res) {
-  var token = req.body.stripeToken;
-  var donationAmount = req.param('donationAmount')
-  console.log(donationAmount);
-  stripe.charges.create(
-    {
-      amount: donationAmount,
-      currency: "usd",
-      source: token
-    },
-    function(err, charge) {
-      // asynchronously called
-    }
-  );
-});
-
 var apiRouter = express.Router();
 
 //register Routes
