@@ -28,7 +28,7 @@ app.get("/countdown", function(req, res) {
   res.sendFile(__dirname + "/app/html/countdown.html");
 });
 
-app.get("/donate", function(req, res) {
+app.get("/marathon", function(req, res) {
   res.sendFile(__dirname + "/app/donate/index.html");
 });
 
@@ -43,9 +43,6 @@ app.get("/vcSubmit", function(req, res) {
   );
 });
 
-app.get('/marathon', function(req,res){
-  res.sendFile(__dirname + '/app/marathon/index.html')
-})
 app.get('/caesar', function(req,res){
   res.sendFile(__dirname + '/app/html/julia.html')
 })
