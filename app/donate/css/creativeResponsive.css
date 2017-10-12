@@ -19,8 +19,7 @@
 
 #overlay{
   background: rgba(45, 38, 38, 0.78);
-  border-radius: 30px;
-  padding: 3%;
+  padding: 2%;
 }
 body, html {
   width: 100%;
@@ -450,6 +449,7 @@ header.masthead .header-content .header-content-inner p {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 300px;
+  margin: 4%;
   font-family: 'Slabo 27px', serif;
 }
 
