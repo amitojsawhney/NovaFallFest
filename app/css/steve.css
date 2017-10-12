@@ -1,0 +1,37 @@
+body {
+  background-image: url("../images/steve.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#overlay {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 57px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: blue;
+  margin-left: 30%;
+  margin-top: 10%;
+  background: rgba(33, 30, 30, 0.73);
+}
+
+#overlayVC {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: blue;
+  margin-left: 30%;
+  margin-top: 10%;
+  background: rgba(33, 30, 30, 0.73);
+}

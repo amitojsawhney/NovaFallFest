@@ -47,6 +47,10 @@ app.get('/caesar', function(req,res){
   res.sendFile(__dirname + '/app/html/julia.html')
 })
 
+app.get('/daadyy', function(req,res){
+  res.sendFile(__dirname + '/app/html/steve.html')
+})
+
 
 
 
