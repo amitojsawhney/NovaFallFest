@@ -43,15 +43,6 @@ app.get("/vcSubmit", function(req, res) {
   );
 });
 
-app.get('/caesar', function(req,res){
-  res.sendFile(__dirname + '/app/html/julia.html')
-})
-
-app.get('/daddaayyy', function(req,res){
-  res.sendFile(__dirname + '/app/html/steve.html')
-})
-
-
 
 
 var apiRouter = express.Router();
