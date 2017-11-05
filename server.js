@@ -43,6 +43,13 @@ app.get("/vcSubmit", function(req, res) {
   );
 });
 
+app.get("/results", function(req, res) {
+  res.sendFile(
+    __dirname +
+      "/app/donate/results.html"
+  );
+});
+
 
 
 var apiRouter = express.Router();
