@@ -50,6 +50,10 @@ app.get("/results", function(req, res) {
   );
 });
 
+app.get("/schedule", function(req,res){
+  res.sendFile(__dirname + "/schedule/index.html")
+});
+
 
 
 var apiRouter = express.Router();
