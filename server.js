@@ -46,11 +46,24 @@ app.get("/vcSubmit", function(req, res) {
 app.get("/results", function(req, res) {
   res.sendFile(
     __dirname +
-      "/app/donate/results.html"
+      "/app/donate/results2.html"
   );
 });
 
-app.get("/schedule", function(req,res){
+app.get("/more", function(req,res){
+  res.sendFile(__dirname + '/app/mobile/more.html')
+})
+
+app.get("/overview", function(req,res){
+  res.sendFile(__dirname + '/app/mobile/overview.html')
+})
+
+
+app.get("/volsSchedule", function(req,res){
+  res.sendFile(__dirname + "/schedule/HTML/index.html")
+});
+
+app.get("/coachSchedule", function(req,res){
   res.sendFile(__dirname + "/schedule/HTML/index.html")
 });
 
