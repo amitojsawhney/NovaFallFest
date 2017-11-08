@@ -46,7 +46,7 @@ app.get("/vcSubmit", function(req, res) {
 app.get("/results", function(req, res) {
   res.sendFile(
     __dirname +
-      "/app/donate/results2.html"
+      "/app/donate/results.html"
   );
 });
 
