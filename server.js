@@ -52,20 +52,20 @@ app.get("/results", function(req, res) {
 });
 
 app.get("/more", function(req,res){
-  res.sendFile(__dirname + '/app/mobile/more.html')
+  res.sendFile(__dirname + '/app/html/placeholder.html')
 })
 
 app.get("/overview", function(req,res){
-  res.sendFile(__dirname + '/app/mobile/overview.html')
+  res.sendFile(__dirname + '/app/html/placeholder.html')
 })
 
 
 app.get("/volsSchedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/vols.html")
+  res.sendFile(__dirname + "/app/html/placeholder.html")
 });
 
 app.get("/coachSchedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/full.html")
+  res.sendFile(__dirname + "/app/html/placeholder.html")
 });
 
 
