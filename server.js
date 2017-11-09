@@ -6,6 +6,7 @@ var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
 var app = express();
+app.use(express.static(__dirname + '/schedule'));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/app"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -60,11 +61,11 @@ app.get("/overview", function(req,res){
 
 
 app.get("/volsSchedule", function(req,res){
-  res.sendFile(__dirname + "/schedule/HTML/vols.html")
+  res.sendFile(__dirname + "/app/schedule/vols.html")
 });
 
 app.get("/coachSchedule", function(req,res){
-  res.sendFile(__dirname + "/schedule/HTML/full.html")
+  res.sendFile(__dirname + "/app/schedule/full.html")
 });
 
 
