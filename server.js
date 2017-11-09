@@ -60,11 +60,11 @@ app.get("/overview", function(req,res){
 
 
 app.get("/volsSchedule", function(req,res){
-  res.sendFile(__dirname + "/schedule/HTML/index.html")
+  res.sendFile(__dirname + "/schedule/HTML/vols.html")
 });
 
 app.get("/coachSchedule", function(req,res){
-  res.sendFile(__dirname + "/schedule/HTML/index.html")
+  res.sendFile(__dirname + "/schedule/HTML/full.html")
 });
 
 
