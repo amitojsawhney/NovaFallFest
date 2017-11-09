@@ -64,7 +64,7 @@ app.get("/volsSchedule", function(req,res){
 });
 
 app.get("/coachSchedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/vols.html")
+  res.sendFile(__dirname + "/app/html/full.html")
 });
 
 app.get("/schedule", function(req,res){
