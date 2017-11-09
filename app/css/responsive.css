@@ -30,7 +30,7 @@ body {
   color: white;
   padding: 20px;
   background-color: blue;
-  margin-left: 30%;
+  width:100%;
   margin-top: 70%;
   background: rgba(33, 30, 30, 0.73);
 }
