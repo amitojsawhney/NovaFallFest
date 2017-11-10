@@ -51,7 +51,7 @@ app.get("/results", function(req, res) {
 });
 
 app.get("/more", function(req,res){
-  res.sendFile(__dirname + '/app/html/placeholder.html')
+  res.sendFile(__dirname + '/app/schedule/more.html')
 })
 
 app.get("/overview", function(req,res){
