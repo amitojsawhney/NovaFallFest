@@ -60,15 +60,15 @@ app.get("/overview", function(req,res){
 
 
 app.get("/volsSchedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/placeholder.html")
+  res.sendFile(__dirname + "/app/schedule/index.html")
 });
 
 app.get("/coachSchedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/full.html")
+  res.sendFile(__dirname + "/app/schedule/index.html")
 });
 
 app.get("/schedule", function(req,res){
-  res.sendFile(__dirname + "/app/html/full.html")
+  res.sendFile(__dirname + "/app/schedule/index.html")
 });
 
 
