@@ -55,7 +55,7 @@ app.get("/more", function(req,res){
 })
 
 app.get("/overview", function(req,res){
-  res.sendFile(__dirname + '/app/html/placeholder.html')
+  res.sendFile(__dirname + '/app/schedule/overview.html')
 })
 
 
