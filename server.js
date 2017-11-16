@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 //var stripe = require("stripe")(process.env.stripeKey);
 var stripe = require('stripe')('sk_test_YOBQn1xtebvhzKhnJycXgHED')
-var port = process.env.PORT;
+var port = process.env.PORT || 8080;
 var mongoose = require("mongoose");
 
 var app = express();
