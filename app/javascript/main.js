@@ -105,7 +105,7 @@
 		======================================*/
 
   $("#clock-countdown")
-    .countdown("2017/11/10 5:00:00")
+    .countdown("2018/11/2 5:00:00")
     .on("update.countdown", function(event) {
       var $this = $(this).html(
         event.strftime(
